@@ -18,11 +18,11 @@ After=network.target remote-fs.target
 
 [Service]
 Type=simple
-User=ctrluser
-Group=ctrluser
+User=alarmuser
+Group=alarmuser
 Environment=JAVA_HOME=/usr/lib/jvm/java-1.17.0-openjdk-amd64/
-ExecStart=/home/ctrluser/alarm/kafka/bin/zookeeper-server-start.sh /home/ctrluser/alarm/kafka/config/zookeeper.properties
-ExecStop=/home/ctrluser/alarm/kafka/bin/zookeeper-server-stop.sh
+ExecStart=/home/alarmuser/phoebus/alarm/kafka_2.13-3.6.2/bin/zookeeper-server-start.sh /home/alarmuser/phoebus/alarm/kafka_2.13-3.6.2/config/zookeeper.properties
+ExecStop=/home/alarmuser/phoebus/alarm/kafka_2.13-3.6.2/bin/zookeeper-server-stop.sh
 
 [Install]
 WantedBy=multi-user.target

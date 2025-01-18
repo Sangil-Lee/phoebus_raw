@@ -23,5 +23,5 @@ echo "pv!name_of_PV"
 echo "restart!"
 echo "shutdown!"
 
-kafka/bin/kafka-console-producer.sh --broker-list 192.168.75.201:9092 --property 'parse.key=true' --property 'key.separator=!' --topic $topic
+kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --property 'parse.key=true' --property 'key.separator=!' --topic $topic
 

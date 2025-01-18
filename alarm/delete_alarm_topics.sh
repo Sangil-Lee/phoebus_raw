@@ -26,6 +26,6 @@ config=$1
 # With recent setups, you might get a "... does not exist" error which can be ignored
 for topic in "$1" "${1}Command" "${1}Talk"
 do
-    kafka/bin/kafka-topics.sh  --bootstrap-server 192.168.75.201:9092 --delete --topic $topic
+    kafka/bin/kafka-topics.sh  --bootstrap-server localhost:9092 --delete --topic $topic
 done
 
