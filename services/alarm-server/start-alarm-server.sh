@@ -6,5 +6,5 @@ else
 	SRC_PATH="$( cd -P "$( dirname "$THIS_SRC" )" && pwd )"
 fi
 
-sh ${SRC_PATH}/alarm-server.sh -server 192.168.75.201:9092 -config Accelerator -import ${SRC_PATH}/alarm_config.xml 
-sh ${SRC_PATH}/alarm-server.sh -server 192.168.75.201:9092 -config Accelerator
+sh ${SRC_PATH}/alarm-server.sh -server localhost:9092 -config Accelerator -import ${SRC_PATH}/alarm_config.xml 
+sh ${SRC_PATH}/alarm-server.sh -server localhost:9092 -config Accelerator
